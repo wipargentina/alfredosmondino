@@ -12,8 +12,8 @@ class Home extends Component {
     super(props);
     this.state = {
       enabledInformation: false,
-      enabledSale: true,
-      enabledAbout: true,
+      enabledSale: false,
+      enabledAbout: false,
       enabledCta: false,
       enabledCalendar: false,
       enabledSuscription: false,
@@ -23,7 +23,14 @@ class Home extends Component {
   render() {
     return (
       <>
-        <Header />
+        {/* <Header /> */}
+        <div>Hero (propuesta de valor mondino)</div>
+        <div>Proximo Remate (form)</div>
+        <div>Detalle del Remate</div>
+        <div>calendario de remates futuros (4 como màximo)</div>
+        <div>Cta suscripción novedades remates </div>
+        <div>Sobre Mondino</div>
+
         {!this.state.enabledInformation ? null : <Information />}
         {!this.state.enabledSale ? null : <Sale />}
         {!this.state.enabledAbout ? null : <About />}
