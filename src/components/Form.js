@@ -41,11 +41,10 @@ class Form extends Component {
       isSending: true,
     });
 
-    //console.log(this.state);
-
     axios
       .post(
-        "https://alfredosmondino.wipargentina.com/backend/mail.php",
+        // "https://alfredosmondino.wipargentina.com/backend/mail.php",
+        "https://alfredosmondino.wipargentina.com/backend/test.php",
         this.state
       )
       .then((response) => {
@@ -113,7 +112,7 @@ class Form extends Component {
               <div className="form-group mb-4">
                 <label htmlFor="">Email</label>
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   className="form-control"
                   onChange={this.handleChange}
@@ -131,7 +130,7 @@ class Form extends Component {
                 type="submit"
                 disabled={isSending}
               >
-                {isSending ? "ENVIANDO ..." : "¡REGISTRARME!"}
+                {isSending ? "ENVIANDO ..." : "¡QUIERO PARTICIPAR!"}
               </button>
             </div>
           </div>

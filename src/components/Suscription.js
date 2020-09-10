@@ -5,10 +5,10 @@ import Mailchimp from "react-mailchimp-form";
 class Suscription extends Component {
   render() {
     return (
-      <div className="suscription">
+      <section className="section suscription">
         <div className="container">
-          <h3>Suscribite a nuestro Newsletter</h3>
-          <h5 className="mb-4">
+          <h3>Novedades</h3>
+          <h5>
             Ingresá tu correo y recibí todas las novedades de los próximos
             remates.
           </h5>
@@ -39,7 +39,7 @@ class Suscription extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

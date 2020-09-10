@@ -1,141 +1,183 @@
+// .hero {
+//   position: relative;
+//   background-image: url("../../static/bg-hero.jpg");
+//   background-size: cover;
+//   background-position: center bottom;
+//   .darken {
+//     background-color: rgba(#000, 0.6);
+//     height: 660px;
+//   }
+//   .content {
+//     height: 660px;
+//     position: absolute;
+//     top: 0;
+//     width: 100%;
+//     display: flex;
+//     align-items: center;
+//     .container {
+//       .headline {
+//         color: white;
+//         .pretitle {
+//           text-transform: uppercase;
+//           font-size: 1.6em;
+//           font-weight: 600;
+//           margin-bottom: 8px;
+//         }
+//         .title {
+//           margin-bottom: 20px;
+//           img {
+//             width: 340px;
+//             margin-bottom: 12px;
+//           }
+//           h2 {
+//             font-weight: 600;
+//           }
+//         }
+//         .subtitle {
+//           text-transform: inherit;
+//           margin-bottom: 30px;
+//         }
+//       }
+//       .logos {
+//         margin-bottom: 30px;
+//         img {
+//           max-height: 50px;
+//         }
+//       }
+//       .info {
+//         margin-bottom: 30px;
+//         .card {
+//           background-color: transparent;
+//           border: none;
+//           .card-body {
+//             padding: 0;
+//             .card-title {
+//               color: white;
+//               margin-bottom: 0px;
+//               font-size: 1.3em;
+//             }
+//             .card-date {
+//               color: $primary;
+//               font-size: 2em;
+//               font-weight: 600;
+//               letter-spacing: 0.04em;
+//               line-height: 1.4em;
+//             }
+//             .card-logo {
+//               margin-top: 8px;
+//               .logo-canal-rural {
+//                 height: 60px;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 767px) {
+//   .hero {
+//     .darken {
+//       height: 1130px;
+//       background-color: rgba(#000, 0.8);
+//     }
+//     .content {
+//       height: 1130px;
+//       .container {
+//         text-align: center;
+//         .headline {
+//           margin-bottom: 30px;
+//           .pretitle {
+//             text-transform: uppercase;
+//             font-size: 1.4em;
+//             font-weight: 600;
+//             margin-bottom: 8px;
+//           }
+//           .title {
+//             margin-bottom: 20px;
+//             img {
+//               width: 240px;
+//               margin-bottom: 12px;
+//             }
+//             h2 {
+//               font-size: 1.6em;
+//               font-weight: 600;
+//             }
+//           }
+//           .subtitle {
+//             text-transform: inherit;
+//             margin-bottom: 20px;
+//             font-size: 1.4em;
+//           }
+//         }
+//         .logos {
+//           margin-bottom: 50px;
+//           img {
+//             max-height: 46px;
+//           }
+//         }
+//         .info {
+//           margin-bottom: 30px;
+//           .card {
+//             background-color: transparent;
+//             margin-bottom: 16px;
+//             .card-body {
+//               padding: 0;
+//               .card-title {
+//                 font-size: 1.1em;
+//               }
+//               .card-date {
+//                 font-size: 1.5em;
+//                 font-weight: 600;
+//                 letter-spacing: 0em;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
 .hero {
-  position: relative;
-  background-image: url("../../static/bg-hero.jpg");
+  height: 600px;
+  // background-color: orange;
+  background-image: url("https://www.nortecorrientes.com/content/bucket/0/327820h1800.jpg");
   background-size: cover;
-  background-position: center bottom;
-  .darken {
-    background-color: rgba(#000, 0.6);
-    height: 660px;
+  background-position: center center;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h1 {
+    color: white;
   }
-  .content {
-    height: 660px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    .container {
-      .headline {
-        color: white;
-        .pretitle {
-          text-transform: uppercase;
-          font-size: 1.6em;
-          font-weight: 600;
-          margin-bottom: 8px;
-        }
-        .title {
-          margin-bottom: 20px;
-          img {
-            width: 340px;
-            margin-bottom: 12px;
-          }
-          h2 {
-            font-weight: 600;
-          }
-        }
-        .subtitle {
-          text-transform: inherit;
-          margin-bottom: 30px;
-        }
-      }
-      .logos {
-        margin-bottom: 30px;
-        img {
-          max-height: 50px;
-        }
-      }
-      .info {
-        margin-bottom: 30px;
-        .card {
-          background-color: transparent;
-          border: none;
-          .card-body {
-            padding: 0;
-            .card-title {
-              color: white;
-              margin-bottom: 0px;
-              font-size: 1.3em;
-            }
-            .card-date {
-              color: $primary;
-              font-size: 2em;
-              font-weight: 600;
-              letter-spacing: 0.04em;
-              line-height: 1.4em;
-            }
-            .card-logo {
-              margin-top: 8px;
-              .logo-canal-rural {
-                height: 60px;
-              }
-            }
-          }
-        }
-      }
-    }
+  h2 {
+    color: white;
+    margin-bottom: 50px;
+  }
+  .btn {
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: 767px) {
   .hero {
-    .darken {
-      height: 1130px;
-      background-color: rgba(#000, 0.8);
+    height: 600px;
+
+    h1 {
+      color: white;
+      font-size: 3em;
     }
-    .content {
-      height: 1130px;
-      .container {
-        text-align: center;
-        .headline {
-          margin-bottom: 30px;
-          .pretitle {
-            text-transform: uppercase;
-            font-size: 1.4em;
-            font-weight: 600;
-            margin-bottom: 8px;
-          }
-          .title {
-            margin-bottom: 20px;
-            img {
-              width: 240px;
-              margin-bottom: 12px;
-            }
-            h2 {
-              font-size: 1.6em;
-              font-weight: 600;
-            }
-          }
-          .subtitle {
-            text-transform: inherit;
-            margin-bottom: 20px;
-            font-size: 1.4em;
-          }
-        }
-        .logos {
-          margin-bottom: 50px;
-          img {
-            max-height: 46px;
-          }
-        }
-        .info {
-          margin-bottom: 30px;
-          .card {
-            background-color: transparent;
-            margin-bottom: 16px;
-            .card-body {
-              padding: 0;
-              .card-title {
-                font-size: 1.1em;
-              }
-              .card-date {
-                font-size: 1.5em;
-                font-weight: 600;
-                letter-spacing: 0em;
-              }
-            }
-          }
-        }
-      }
+    h2 {
+      color: white;
+      margin-bottom: 50px;
+      font-size: 1.6em;
+    }
+    .btn {
+      margin-bottom: 0;
     }
   }
 }

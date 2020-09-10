@@ -1,28 +1,32 @@
 import React from "react";
-import Form from "./Form";
+import { Link as Scroll } from "react-scroll";
 
-import HeroInfo from "./HeroInfo";
-import HeroHeadline from "./HeroHeadline";
-
-function Hero(props) {
+const Hero = () => {
   return (
     <div className="hero">
-      <div className="darken"></div>
-      <div className="content">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-8">
-              <HeroHeadline />
-              <HeroInfo />
-            </div>
-            <div className="col-md-4">
-              <Form />
-            </div>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-10">
+            <h1>Remates de Hacienda</h1>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Aspernatur, cupiditate.
+            </h2>
+            <Scroll
+              to="sale"
+              spy={true}
+              smooth={true}
+              offset={-98}
+              duration={599}
+              className="btn btn-lg px-5 btn-primary text-white"
+            >
+              PRÓXIMO REMATE
+            </Scroll>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Hero;

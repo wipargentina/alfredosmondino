@@ -1,5 +1,58 @@
 .calendar {
-  padding: 50px;
   text-align: center;
-  background-color: lightgreen;
+  background-color: $gray-100;
+  //color: white;
+  h3 {
+    margin-bottom: 10px;
+  }
+  h5 {
+    margin-bottom: 30px;
+  }
+  .card {
+    margin-bottom: 30px;
+    .card-image {
+      height: 120px;
+      border-bottom: 1px solid $gray-200;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card-date {
+      font-size: 1.6em;
+      color: $primary;
+      margin-bottom: 8px;
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 1.6em;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .calendar {
+    h3 {
+      margin-bottom: 10px;
+    }
+    h5 {
+      margin-bottom: 30px;
+    }
+    .card {
+      margin-bottom: 30px;
+      .card-image {
+        height: 120px;
+        border-bottom: 1px solid $gray-200;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card-title {
+        font-weight: 700;
+        font-size: 1.6em;
+      }
+      .card-date {
+        font-size: 1.4em;
+      }
+    }
+  }
 }

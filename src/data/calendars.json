@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Estancia y Cabaña Don Benjamín",
+      "date": "2020-09-25",
+      "image": "https://alfredosmondino.com/wp-content/uploads/2018/10/logo.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Compañia General de Hacienda SA",
+      "date": "2020-10-06",
+      "image": "https://alfredosmondino.com/wp-content/uploads/2018/10/logo.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Los Murmullos de los Gauchos SA",
+      "date": "2020-10-13",
+      "image": "https://alfredosmondino.com/wp-content/uploads/2018/10/logo.jpg"
+    }
+  ]
+}
